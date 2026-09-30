@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
 
     <h1>Contact Information</h1>
     
-</head>
-<body>
-    
+    <p>Feel free to reach out!</p>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../projects/index.html">Portfolio</a>
+        <a href="../resume/index.html">Resume</a>
+        <a href="https://github.com/benly03" target="blank">Github Page</a>
+    </nav>
+
+    <form action="mailto:bjly@ucsd.edu" method="POST" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input id="fname" name="subject" required>
+
+        <label for="email">Email:</label>
+        <input id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea name="body"></textarea>
+
+        <button>Send</button>
+    </form>
+
 </body>
 </html>
