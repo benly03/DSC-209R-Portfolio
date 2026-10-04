@@ -8,17 +8,19 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="../">Home</a></li>
+            <li><a href="index.html" aria-current="page">Contact</a></li>
+            <li><a href="../projects/">Portfolio</a></li>
+            <li><a href="../resume/">Resume</a></li>
+            <li><a href="https://github.com/benly03" target="blank">Github Page</a></li>
+        </ul>
+    </nav>
 
     <h1>Contact Information</h1>
     
     <p>Feel free to reach out!</p>
-
-    <nav>
-        <a href="../">Home</a>
-        <a href="../projects/">Portfolio</a>
-        <a href="../resume/">Resume</a>
-        <a href="https://github.com/benly03" target="blank">Github Page</a>
-    </nav>
 
     <form action="mailto:bjly@ucsd.edu" method="POST" enctype="text/plain">
         <label for="name">Name:</label>
@@ -28,7 +30,7 @@
         <input id="email" name="email" required>
 
         <label for="message">Message:</label>
-        <textarea name="body"></textarea>
+        <textarea name="body" required></textarea>
 
         <button>Send</button>
     </form>

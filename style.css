@@ -1,7 +1,86 @@
+:root {
+    --color-accent:rgb(32, 69, 41);
+
+}
+
 body {
     /* Set line height to  1.t times the font size
         and use the OS's UI font as the website font
         */
     
         font: 100%/1.5 system-ui;
+        margin-inline: auto;
+        max-width: 250ch;
+        padding: 25px 25px;
+        accent-color: var(--color-accent);
+}
+
+nav {
+    display: flex;
+    padding-bottom: 0.4em;
+    border-bottom: 1px solid oklch(80% 3% 200);
+
+    a {
+        flex: 1;
+        text-decoration: none;
+        color: inherit;
+        text-align: center;
+        padding: 0.5em;
+        margin-bottom: 10px;
+        border-bottom: 4px solid transparent;
+    }
+
+    a[aria-current="page"] {
+        border-bottom-color: oklch(80% 3% 200);
+        font-weight: bold;
+    }
+
+    ul, li {
+        display: contents;
+    }
+
+    a:hover {
+        border-bottom-color: var(--color-accent);
+        font-weight: bold;
+    }
+}
+
+form {
+    display: grid;
+    width: 100%;
+}
+
+form label {
+    grid-template-columns: subgrid;
+    margin-block: 15px;
+}
+
+form input, form textarea, form button{
+    display: grid;
+    width: 100%;
+    box-sizing: border-box;
+    font: inherit;
+    padding: 0.5em;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    gap: 1em;
+}
+
+.projects article {
+    display: grid;
+    grid-template-rows: subgrid;
+    gap: 1em;
+    grid-row: span 3;
+}
+
+
+:header {
+    line-height: 1.1;
+}
+
+h2 {
+    margin: 0
 }
