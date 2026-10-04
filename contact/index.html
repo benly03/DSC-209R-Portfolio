@@ -23,14 +23,16 @@
     <p>Feel free to reach out!</p>
 
     <form action="mailto:bjly@ucsd.edu" method="POST" enctype="text/plain">
-        <label for="name">Name:</label>
-        <input id="fname" name="subject" required>
+        <label for="name">Name:
+            <input id="fname" name="subject" required>
+        </label>
 
         <label for="email">Email:</label>
-        <input id="email" name="email" required>
+            <input type="email" name="email" required>
+        </label>
 
         <label for="message">Message:</label>
-        <textarea name="body" required></textarea>
+        <textarea name="body"></textarea>
 
         <button>Send</button>
     </form>
