@@ -15,6 +15,13 @@ body {
         accent-color: var(--color-accent);
 }
 
+img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
 nav {
     display: flex;
     padding-bottom: 0.4em;
@@ -48,19 +55,28 @@ nav {
 form {
     display: grid;
     width: 100%;
+    grid-template-columns: auto 1fr;
+    gap: 1em;
 }
 
 form label {
+    display: grid;
+    grid-column: 1 / -1;
     grid-template-columns: subgrid;
-    margin-block: 15px;
+    align-items: start;
+    margin: 0;
 }
 
 form input, form textarea, form button{
-    display: grid;
     width: 100%;
+    min-width: 0;
     box-sizing: border-box;
     font: inherit;
     padding: 0.5em;
+}
+
+form button {
+    grid-column: 1 / -1;
 }
 
 .projects {
@@ -77,10 +93,63 @@ form input, form textarea, form button{
 }
 
 
-:header {
+h1, h2, h3, h4, h5, h6 {
     line-height: 1.1;
 }
 
 h2 {
     margin: 0
+}
+
+/*.subtitle {
+    display: grid;
+    padding-bottom: 0.4em;
+    border-bottom: var(--color-accent);
+}*/
+
+.resume-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 4fr);
+    gap: 2em;
+    align-items: start;
+    margin-top: 2em;
+    column-gap: 20px;
+}
+
+.profile {
+    background-color: var(--color-accent);
+    max-width: 300px;
+    padding: 1.5em;
+    border-radius: 10px;
+    color: oklch(80.385% 0.00559 197.948);
+    column-gap: 0;
+}
+
+.profile img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.resume-content {
+    min-width: 0;
+    column-gap: 0;
+}
+
+.resume-content h1 {
+    min-width: 0;
+}
+
+.resume-content .subtitle {
+    margin-top: 1.5em;
+    padding-bottom: 0.4em;
+    border-bottom: 3px solid var(--color-accent);
+}
+
+/* Stack the sections on smaller screens */
+@media (max-width: 700px) {
+    .resume-layout {
+        grid-template-columns: 1fr;
+    }
 }
