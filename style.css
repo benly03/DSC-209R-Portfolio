@@ -1,5 +1,6 @@
 :root {
     --color-accent:rgb(32, 69, 41);
+    --background-color: #deddc8;
 
 }
 
@@ -13,6 +14,7 @@ body {
         max-width: 250ch;
         padding: 25px 25px;
         accent-color: var(--color-accent);
+        background-color: var(--background-color);
 }
 
 img {
@@ -100,12 +102,6 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
     margin: 0
 }
-
-/*.subtitle {
-    display: grid;
-    padding-bottom: 0.4em;
-    border-bottom: var(--color-accent);
-}*/
 
 .resume-layout {
     display: grid;
