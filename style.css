@@ -1,7 +1,8 @@
 :root {
     --color-accent:rgb(32, 69, 41);
     --background-color: #deddc8;
-
+    color-scheme: light dark;
+    --border-color: oklch(50% 10% 200 / 40%);
 }
 
 body {
@@ -9,12 +10,13 @@ body {
         and use the OS's UI font as the website font
         */
     
-        font: 100%/1.5 system-ui;
-        margin-inline: auto;
-        max-width: 250ch;
-        padding: 25px 25px;
-        accent-color: var(--color-accent);
-        background-color: var(--background-color);
+    font: 100%/1.5 system-ui;
+    margin-inline: auto;
+    max-width: 250ch;
+    padding: 25px 25px;
+    accent-color: var(--color-accent);
+    background-color: Canvas;
+    color: CanvasText;
 }
 
 img {
@@ -27,31 +29,31 @@ img {
 nav {
     display: flex;
     padding-bottom: 0.4em;
-    border-bottom: 1px solid oklch(80% 3% 200);
+    border-bottom: 1px solid var(--border-color);
+}
 
-    a {
-        flex: 1;
-        text-decoration: none;
-        color: inherit;
-        text-align: center;
-        padding: 0.5em;
-        margin-bottom: 10px;
-        border-bottom: 4px solid transparent;
-    }
+ul, li {
+    display: contents;
+}
 
-    a[aria-current="page"] {
-        border-bottom-color: oklch(80% 3% 200);
-        font-weight: bold;
-    }
+nav a{
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    padding: 0.5em;
+    margin-bottom: 10px;
+    border-bottom: 4px solid transparent
+}
 
-    ul, li {
-        display: contents;
-    }
+nav a.current {
+    font-weight: bold;
+    border-bottom-color: var(--border-color);
+}
 
-    a:hover {
-        border-bottom-color: var(--color-accent);
-        font-weight: bold;
-    }
+nav a:hover {
+    border-bottom-color: var(--color-accent);
+    font-weight: bold;
 }
 
 form {
@@ -148,4 +150,12 @@ h2 {
     .resume-layout {
         grid-template-columns: 1fr;
     }
+}
+
+.color-scheme {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font: inherit;
+    font-size: 80%;
 }
