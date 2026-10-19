@@ -1,61 +1,73 @@
 [
     {
-        "title": "Lorem ipsum dolor sit.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt delectus rem molestiae a animi, commodi ex earum? A delectus esse eos, fugit beatae adipisci possimus animi ullam quisquam, sint reiciendis?"
+        "title": "Maximizing Fiber and Protein per Dollar in Major Grocery Stores",
+        "Year": 2026,
+        "image": "../images/final_vis.png",
+        "description": "Visualized and analyzed a grocery store database with the goal of identifying food categories that help people maximize the amount of fiber and protein they can get per dollar. Listing the top 5 with the best category being pasta/noodles. With the top 5 categories I found the stores that people should be shopping at to get that food item for the best price."
     },
     {
-        "title": "Hic dolores velit excepturi?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Repudiandae, reiciendis magni officiis itaque dolore exercitationem dicta odio velit provident cum pariatur consectetur corporis qui reprehenderit! Aspernatur, quod quae, vitae ut aut quo accusantium vero molestiae saepe nulla vel!"
+        "title": "Diabetic Patient 30 Day Hospital Readmission Prediction",
+        "Year": 2026,
+        "image": "../images/hospital-prediction.png",
+        "description": "Used UCI Machine Learning Repository to access data from 1999-2008 regarding patients with diabetes and their hospital readmission state. Evaluated models based on their ability to accurately predict less than 30 day readmission. Identified Random Forest model trained on SMOTE dataset to be the best performing model. The model yielded a 70% overall prediction accuracy and F1 score of 0.26 for less than 30 day readmission."
     },
     {
-        "title": "Libero dolorum sed cum?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Asperiores assumenda, nisi mollitia debitis facilis porro hic delectus ipsum, dolores nesciunt consequatur quam sequi quod harum quis dicta libero labore. Sapiente id facilis cumque soluta aperiam quaerat, distinctio perferendis?"
+        "title": "Risk Factor Analysis of Peritoneal Carcinomatosis",
+        "Year": 2024,
+        "image": "../images/dbmi-frontpage.png",
+        "description": "Collaborated with Dr. Nicole Lopez to build a project on identifying risk factors of Peritoneal Carcinomatosis. Analysis was performed in RStudio using logistic regression to identify risk factors. These risk factors were increasing age, private insurance, and increasing tumor stage. Another risk factor were patients of black ethnicity, but this requires further investigation in order to identify race as a risk factor."
     },
     {
         "title": "Aliquam laborum blanditiis dolorem.",
+        "Year": 2023,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Tenetur aspernatur ad recusandae porro eos illo omnis nostrum nisi, distinctio eius dolor minus atque fugit soluta neque quae velit voluptatum sequi accusantium nihil consectetur dignissimos at repellat. Illum, id!"
     },
     {
         "title": "Cumque culpa iusto blanditiis!",
+        "Year": 2023,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Totam unde, doloribus perspiciatis perferendis hic assumenda distinctio iusto eveniet? Doloribus nemo cum deserunt accusantium sint magni non perspiciatis dolorem sit consequatur omnis delectus ipsum, recusandae, aliquid quis? Omnis, vero."
     },
     {
         "title": "Illum temporibus tempora esse?",
+        "Year": 2022,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Labore ex id minus eaque mollitia hic magni praesentium, nisi pariatur cum fuga eius quo saepe assumenda voluptate repellendus facere quia. Aspernatur velit sequi, est incidunt adipisci hic expedita error."
     },
     {
         "title": "Eos dolore delectus optio.",
+        "Year": 2022,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Et culpa odio laborum impedit dolor. Nemo nobis nihil, cupiditate earum delectus obcaecati illo ipsum esse sit voluptatem officiis non veritatis culpa suscipit repudiandae. Earum recusandae veritatis commodi voluptas qui."
     },
     {
         "title": "Eum minus ipsa harum!",
+        "Year": 2021,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Nostrum consequatur nihil voluptates quod. Consequatur blanditiis illum accusantium ducimus sit architecto adipisci corrupti, molestiae expedita natus vel ab esse minus fugiat deserunt recusandae repellat. Numquam nisi explicabo molestiae porro."
     },
     {
         "title": "Quasi distinctio voluptates quam.",
+        "Year": 2021,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Commodi dolor a sed? Voluptatum maiores, ea labore obcaecati eligendi quasi quae id enim iusto. Minima, ratione natus, saepe dolorum culpa odio expedita velit necessitatibus eaque ex numquam. Neque, commodi!"
     },
     {
         "title": "Dolorem, culpa. Ullam, optio!",
+        "Year": 2020,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Tenetur mollitia provident impedit aut error aspernatur, repudiandae dicta? Molestias non perspiciatis ipsum nam officiis, minus reiciendis ab accusantium repellendus. Id placeat dolore soluta enim non quas magni repellendus maiores?"
     },
     {
         "title": "Necessitatibus laudantium harum maxime?",
+        "Year": 2020,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Distinctio hic esse perferendis ullam omnis libero possimus. Quia excepturi deserunt voluptates nihil iure asperiores nam tempore modi sunt quos dolorem, consectetur corporis doloremque saepe porro iste, eaque illo sint!"
     },
     {
         "title": "Architecto quam quas laborum!",
+        "Year": 2019,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Debitis ad excepturi, quo necessitatibus nostrum numquam labore vero similique saepe ipsum, quos possimus praesentium neque temporibus magnam et tenetur ipsam eos dicta in voluptates non? Eius corrupti odit aliquid?"
     }

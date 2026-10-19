@@ -4,6 +4,7 @@ function $$(selector, context = document) {
     return Array.from(context.querySelectorAll(selector))
 };
 
+// add in autopopulation in all pages nav section
 let pages = [
     {url: '', title: 'Home' },
     {url: 'projects/', title: 'Portfolio' },
@@ -41,6 +42,7 @@ for (let p of pages) {
     }
 };
 
+// add in color theme switcher
 document.body.insertAdjacentHTML(
     'afterbegin',
     `
@@ -67,6 +69,7 @@ select.addEventListener('input', function (event) {
     localStorage.colorScheme = event.target.value;
 });
 
+// add in project auto population
 export async function fetchJSON(url) {
     try {
         //Fetch the JSON file from the given URL
@@ -82,14 +85,14 @@ export async function fetchJSON(url) {
     }
 }
 
-export function renderProjects(project, containerElement, headingLevel = 'h2') {
+export function renderProjects(projects, containerElement, headingLevel = 'h2') {
     containerElement.innerHTML = '';
 
     for (const project of projects) {
         const article = document.createElement('article');
         
         article.innerHTML = `
-            <h3>${project.title}</h3>
+            <${headingLevel}>${project.title}</${headingLevel}>
             <img src="${project.image}" alt="${project.title}">
             <p>${project.description}</p>
         `;
@@ -98,3 +101,16 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
     }
 }
 
+export function countProjects(projects) {
+    const title = document.querySelector('.projects-title');
+
+    if (title) {
+        title.innerHTML = `
+            ${projects.length} Projects
+        `;
+    }
+}
+
+export async function fetchGithubData (username) {
+    return fetchJSON(`https://api.github.com/users/${username}`);
+}
