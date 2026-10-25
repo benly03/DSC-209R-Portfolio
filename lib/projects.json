@@ -2,19 +2,19 @@
     {
         "title": "Maximizing Fiber and Protein per Dollar in Major Grocery Stores",
         "Year": 2026,
-        "image": "../images/final_vis.png",
+        "image": "images/final_vis.png",
         "description": "Visualized and analyzed a grocery store database with the goal of identifying food categories that help people maximize the amount of fiber and protein they can get per dollar. Listing the top 5 with the best category being pasta/noodles. With the top 5 categories I found the stores that people should be shopping at to get that food item for the best price."
     },
     {
         "title": "Diabetic Patient 30 Day Hospital Readmission Prediction",
         "Year": 2026,
-        "image": "../images/hospital-prediction.png",
+        "image": "images/hospital-prediction.png",
         "description": "Used UCI Machine Learning Repository to access data from 1999-2008 regarding patients with diabetes and their hospital readmission state. Evaluated models based on their ability to accurately predict less than 30 day readmission. Identified Random Forest model trained on SMOTE dataset to be the best performing model. The model yielded a 70% overall prediction accuracy and F1 score of 0.26 for less than 30 day readmission."
     },
     {
         "title": "Risk Factor Analysis of Peritoneal Carcinomatosis",
         "Year": 2024,
-        "image": "../images/dbmi-frontpage.png",
+        "image": "images/dbmi-frontpage.png",
         "description": "Collaborated with Dr. Nicole Lopez to build a project on identifying risk factors of Peritoneal Carcinomatosis. Analysis was performed in RStudio using logistic regression to identify risk factors. These risk factors were increasing age, private insurance, and increasing tumor stage. Another risk factor were patients of black ethnicity, but this requires further investigation in order to identify race as a risk factor."
     },
     {
