@@ -92,8 +92,8 @@ form button {
 .projects article {
     display: grid;
     grid-template-rows: subgrid;
-    gap: 1em;
-    grid-row: span 3;
+    gap: 0.5em;
+    grid-row: span 4;
 }
 
 
@@ -158,4 +158,11 @@ h2 {
     top: 5px;
     font: inherit;
     font-size: 80%;
+}
+
+#projects-pie-plot {
+    max-width: 20em;
+    margin-block: 2em;
+
+    overflow: visible;
 }
