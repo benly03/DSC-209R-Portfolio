@@ -219,3 +219,21 @@ h2 {
         box-sizing: border-box;
     }
 }
+
+&:has(path:hover) {
+    path:not(:hover) {
+        opacity: 0.5;
+    }
+}
+
+path {
+    transition: 300ms;
+}
+
+.selected {
+    --color: oklch(60% 45% 0)
+
+    &:is(path) {
+        fill: var(var(--color));
+    }
+}
