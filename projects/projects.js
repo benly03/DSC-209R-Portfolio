@@ -110,37 +110,3 @@ searchInput.addEventListener('input', (event) => {
 
 
 let selectedIndex = -1;
-
-newArcs.forEach((arc, i) => {
-    svg.append('path')
-        .attr('d', arc)
-        .attr('fill', colors(i))
-        .on('click', () => {
-            selectedIndex = selectedIndex === i ? -1 : i;
-            svg.selectAll('path')
-                .attr('class', (_, idx) => {
-                    idx === selectedIndex ? 'selected' : ''
-                });
-
-            legend.selectAll('path')
-                .attr('class', (_, idx) => {
-                    idx === selectedIndex ? 'selected' : ''
-                });
-            
-            let filteredProjects;
-
-            if (selectedIndex === -1) {
-                renderProjects(projects, projectsContainer, 'h2');
-            } else { 
-                let selectedYear = data[selectedIndex].label;
-
-                filteredProjects = projectsGiven.filter (
-                    (project) => project.Year === selectedYear
-                );
-            }
-
-            projectsContainer.innerHTML = '';
-            renderProjects(filteredProjects, projectsContainer, 'h2');
-            countProjects(filteredProjects);
-        });
-});
