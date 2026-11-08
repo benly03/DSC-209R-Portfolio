@@ -107,6 +107,3 @@ searchInput.addEventListener('input', (event) => {
 
     renderPieChart(filteredProjects);
 });
-
-
-let selectedIndex = -1;
