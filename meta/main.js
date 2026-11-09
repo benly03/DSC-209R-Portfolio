@@ -158,6 +158,24 @@ function renderScatterPlot(data, commits) {
 function renderTooltipContent(commit) {
     const link = document.getElementById('commit-link');
     const date = document.getElementById('commit-date');
+    
+    link.href = commit.url;
+    link.textContent = commit.id;
+
+    document.getElementById('commit-date').textContent = 
+        commit.datetime.toLocaleString('en', {
+            dateStyle: 'full'
+        });
+
+    document.getElementById('commit-time').textContent = 
+    commit.datetime.toLocaleString('en', {
+        timeStyle: 'short'
+    });
+
+    document.getElementById('commit-author').textContent = commit.author;
+
+    document.getElementById('commit-lines').textContent = commit.totalLines;
+
     if (Object.keys(commit).length === 0) return;
     
     link.href = commit.url;
