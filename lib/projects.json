@@ -1,5 +1,11 @@
 [
     {
+        "title": "Bike Watching and Traffic Interactive Visualization",
+        "Year": 2026,
+        "image": "images/vis_pic.png",
+        "description": "Created a visualization showing bike lanes and BlueBike stations in the Boston area."
+    },
+    {
         "title": "Maximizing Fiber and Protein per Dollar in Major Grocery Stores",
         "Year": 2026,
         "image": "images/final_vis.png",
@@ -16,12 +22,6 @@
         "Year": 2024,
         "image": "images/dbmi-frontpage.png",
         "description": "Collaborated with Dr. Nicole Lopez to build a project on identifying risk factors of Peritoneal Carcinomatosis. Analysis was performed in RStudio using logistic regression to identify risk factors. These risk factors were increasing age, private insurance, and increasing tumor stage. Another risk factor were patients of black ethnicity, but this requires further investigation in order to identify race as a risk factor."
-    },
-    {
-        "title": "Aliquam laborum blanditiis dolorem.",
-        "Year": 2023,
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Tenetur aspernatur ad recusandae porro eos illo omnis nostrum nisi, distinctio eius dolor minus atque fugit soluta neque quae velit voluptatum sequi accusantium nihil consectetur dignissimos at repellat. Illum, id!"
     },
     {
         "title": "Cumque culpa iusto blanditiis!",
