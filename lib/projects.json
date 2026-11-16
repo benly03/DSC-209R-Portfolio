@@ -3,7 +3,8 @@
         "title": "Bike Watching and Traffic Interactive Visualization",
         "Year": 2026,
         "image": "images/vis_pic.png",
-        "description": "Created a visualization showing bike lanes and BlueBike stations in the Boston area."
+        "description": "Created a visualization showing bike lanes and BlueBike stations in the Boston area.",
+        "url": "https://benly03.github.io/bikewatching/"
     },
     {
         "title": "Maximizing Fiber and Protein per Dollar in Major Grocery Stores",
