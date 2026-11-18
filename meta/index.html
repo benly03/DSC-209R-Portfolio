@@ -12,7 +12,12 @@
     <h1>Meta</h1>
     <p>This page includes stats about the code of this website</p>
 
-    <div id="stats"></div>
+    <div id="stats">
+        <label> <!--show commits until: -->
+            <input type="range" id="commit-progress" min="0" max="100" value="100">
+            <time id="selected-time"></time>
+        </label>
+    </div>
 
     <h2>Commits by time of day</h2>
     <div id="chart"></div>
