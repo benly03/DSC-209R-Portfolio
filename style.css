@@ -362,27 +362,29 @@ circle.selected {
 }
 
 #scrolly-1 {
-  position: relative;
-  display: flex;
-  gap: 1rem;
+    position: relative;
+    display: flex;
+    gap: 1rem;
 
 
-  > * {
-    flex: 1;
-  }
+    > * {
+        flex: 1;
+    }
 }
 
 
 #scatter-story {
-  position: relative;
-  padding-bottom: 50vh; /* lets the last steps reach the middle of the screen */
+    position: relative;
+    padding-bottom: 50vh; 
 }
 
 
 #scatter-plot {
-  position: sticky;
-  top: 0;
-  left: 0;
-  bottom: auto;
-  height: 50vh;
+    margin-bottom: 2rem;
+}
+
+#file-panel {
+    position: sticky;
+    top: 1rem;
+    align-self: flex-start; 
 }

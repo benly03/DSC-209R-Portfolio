@@ -12,43 +12,50 @@
     <h1>Meta</h1>
     <p>This page includes stats about the code of this website</p>
 
-    <div id="stats">
-        <label> <!--show commits until: -->
-            <input type="range" id="commit-progress" min="0" max="100" value="100">
-            <time id="selected-time"></time>
-        </label>
+    <!-- Total LOC / Total commits are added here by renderCommitInfo() -->
+    <div id="stats"></div>
 
-        <dl id="files"></dl>
+    <!-- full-width chart at the top; scrolls away normally -->
+    <div id="scatter-plot">
+        <h2>Commits by time of day</h2>
+        <div id="chart"></div>
+
+        <dl id="commit-tooltip" class="info tooltip" hidden>
+            <dt>Commit</dt>
+            <dd>
+                <a href="" id="commit-link" target="_blank"></a>
+            </dd>
+
+            <dt>Date</dt>
+            <dd id="commit-date"></dd>
+
+            <dt>Time</dt>
+            <dd id="commit-time"></dd>
+
+            <dt>Author</dt>
+            <dd id="commit-author"></dd>
+
+            <dt>Lines Edited</dt>
+            <dd id="commit-lines"></dd>
+        </dl>
+
+        <p id="selection-count">No commits selected</p>
+        <dl id="language-breakdown" class="stats"></dl>
     </div>
-    
+
     <div id="scrolly-1">
-        <div id="scatter-story"></div>
-        <div id="scatter-plot">
-            <h2>Commits by time of day</h2>
-            <div id="chart"></div>
+        <!-- left: stays on screen while the story scrolls -->
+        <div id="file-panel">
+            <label> <!--show commits until: -->
+                <input type="range" id="commit-progress" min="0" max="100" value="100">
+                <time id="selected-time"></time>
+            </label>
 
-            <dl id="commit-tooltip" class="info tooltip" hidden>
-                <dt>Commit</dt>
-                <dd>
-                    <a href="" id="commit-link" target="_blank"></a>
-                </dd>
-
-                <dt>Date</dt>
-                <dd id="commit-date"></dd>
-                
-                <dt>Time</dt>
-                <dd id="commit-time"></dd>
-                        
-                <dt>Author</dt>
-                <dd id="commit-author"></dd>
-
-                <dt>Lines Edited</dt>
-                <dd id="commit-lines"></dd>
-            </dl>
-
-            <p id="selection-count">No commits selected</p>
-            <dl id="language-breakdown" class="stats"></dl>
+            <dl id="files"></dl>
         </div>
+
+        <!-- right: commit messages, filled in by main.js -->
+        <div id="scatter-story"></div>
     </div>
 
 </body>
